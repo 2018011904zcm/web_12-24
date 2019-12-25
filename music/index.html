@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>音乐</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="top">
+		<div id="select">
+			<span>
+				<a href="#">你好，请登录</a>
+				<a href="#">免费注册</a>
+				<a href="#">我的订单</a>
+				<a href="#">网站导航</a>
+				<a href="#">客户服务</a>
+				<a href="#">金融</a>
+				<a href="#">读书</a>
+				<a href="#">音乐</a>
+			</span>
+		</div>
+	</div>
+	<div id="sl">
+		<span id="tip">欢迎登录京东音乐官网！！！</span>
+		<div></div>
+	</div>
+	<div id="to">
+		<div id="top2">
+			<img src="images/img6.png">
+			<input type="text" name="">
+			<button>搜索</button>
+		</div>
+	</div>
+	<div id="thing2">
+		
+	</div>
+	<div id="outline">
+		<div class="box" id="box">
+			<div class="slider" id="slider">
+				<div class="slide"><img src="images/img5.png"></div>
+				<div class="slide"><img src="images/img1.jpg"></div>
+				<div class="slide"><img src="images/img2.png"></div>
+				<div class="slide"><img src="images/img3.png"></div>
+				<div class="slide"><img src="images/img4.png"></div>
+				<div class="slide"><img src="images/img5.png"></div>
+				<div class="slide"><img src="images/img1.jpg"></div>
+			</div>
+			<ul class="nav" id="nav">
+				<li class="active">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+		</div>
+	</div>
+	<div id="thing">
+		
+	</div>
+	<div id="out">
+		<div id="banner"></div>
+	</div>
+	<div id="first">
+		
+	</div>
+	<div id="second">
+		
+	</div>
+	<div id="third">
+		
+	</div>
+	<div class="bottom">
+		<div>
+			<ul>
+				<li>新手上路</li> 
+				<li><a href="#">售后流程</a></li>
+				<li><a href="#">购物流程</a></li>
+				<li><a href="#">订购方式</a></li>
+			</ul>
+			<ul>
+				<li>新手上路</li> 
+				<li><a href="#">售后流程</a></li>
+				<li><a href="#">购物流程</a></li>
+				<li><a href="#">订购方式</a></li>
+			</ul>
+			<ul>
+				<li>购物指南</li> 
+				<li><a href="#">常见问题</a></li>
+				<li><a href="#">订购流程</a></li>
+				<li><a href="#">注册新会员</a></li>
+			</ul>
+			<ul>
+				<li>售后服务</li> 
+				<li><a href="#">退换货原则</a></li>
+				<li><a href="#">售后服务保证</a></li>
+				<li><a href="#">换货流程</a></li>
+			</ul>
+			<ul>
+				<li>关于我们</li> 
+				<li><a href="#">网站故障报告</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">投诉与建议</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="bot">
+		<div id="bottom2">
+			<span>关于我们 | 联系我们 | 人才招聘 | 商家入驻 | 广告服务 | 友情链接 | 销售联盟 | 音乐社区 | 音乐公益</span>
+		</div>
+	</div>
+
+	
+	<script src="js/animate.js"></script>
+	<script type="text/javascript">
+		var tip = document.getElementById("tip");
+		// tip.style.color = "";
+		tip.style.marginLeft = "800px";//不能用CSS来设置，否则没有效果
+		//页面加载好后，开始进行滑动
+		window.onload = function(){	
+			var intervalId = setInterval(function(){
+				var marginLeft = tip.style.marginLeft;
+				tip.style.marginLeft = (parseInt(marginLeft) - 1) + "px";
+				if (parseInt(marginLeft) == 5){
+					tip.style.marginLeft = 800 + "px";
+				}
+			}, 30);
+		}
+		//轮播图盒子
+		var box = document.getElementById("box");
+		//按钮集合
+		var oNavlist = document.getElementById("nav").children;
+		//图片
+		var slider = document.getElementById("slider");
+		//第几张图片
+		var index = 1;
+		//翻页计时器
+		var timer;
+		//用来标记图片是否在滑动
+		var isMoving = false;
+
+		//轮播下一张的函数 
+		function next(){
+			if (!isMoving){
+				isMoving = true;
+				index++;
+				navChange();
+				animate(slider, {left: -1200 * index}, function(){
+					if (index > 5){
+						slider.style.left = "-1200px";
+						index = 1;
+					}
+					isMoving = false;
+				})
+				
+			}
+		}
+
+		//上一张
+		function prev(){
+			if (!isMoving){
+				isMoving = true;
+				index--;
+				navChange();
+				animate(slider, {left: -1200 * index}, function(){
+					if (index === 0){
+						slider.style.left = "-6000px";
+						index = 5;
+					}
+					isMoving = false;
+				})
+
+			}
+		}
+		//翻页定时器
+		var timer = setInterval(next, 3000);
+		//鼠标划入清除定时器
+		box.onmouseover = function(){
+			// animate(left, {opacity: 50});
+			// animate(right, {opacity: 50});
+			clearInterval(timer);
+		}
+		//鼠标划出开定时器
+		box.onmouseout = function(){
+			// animate(left, {opacity:0});
+			// animate(right, {opacity:0});
+			timer = setInterval(next, 3000);
+		}
+
+		//绑定按钮点击事件
+		for (var i = 0; i < oNavlist.length; i++){
+			//添加索引属性
+			oNavlist[i].idx = i;
+			oNavlist[i].onclick = function(){
+				 index = this.idx + 1;
+				 animate(slider, {left:-1200 * index});
+				 navChange();
+			}
+		}
+		//按钮颜色改变
+		function navChange(){
+			for (var i = 0; i < oNavlist.length; i++){
+				oNavlist[i].className = "";	
+			}
+			if (index > 5){
+				oNavlist[0].className = "active";
+			}else if (index === 0){
+				oNavlist[4].className = "active";
+			}else{
+				oNavlist[index - 1].className = "active";
+			}
+		}
+	</script>
+</body>
+</html>
