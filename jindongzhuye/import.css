@@ -1,0 +1,195 @@
+/*
+* @Author: 11
+* @Date:   2019-12-20 17:16:38
+* @Last Modified by:   11
+* @Last Modified time: 2019-12-25 16:48:59
+*/
+*{
+	padding: 0;
+	margin: 0;
+}
+ul,li{
+	list-style: none;
+}
+.topSelect{
+	height: 30px;
+	background-color: WhiteSmoke;
+	text-align: center;
+	line-height: 30px;
+	padding-left: 435px;
+}
+.topSelect ul li{
+	float: left;
+	margin-left: 30px;
+	width: 84px;
+	border-radius: 5px;
+	color: gray;
+}
+.topSelect ul li:hover{
+	color: red;
+}
+.guanZhu{
+	position: absolute;
+	z-index: 1;
+	height: 110px;
+	top: 30px;
+	right: 630px;
+	border-top: none; 
+	display: none;
+}
+.service{
+	width: 190px;
+	position: absolute;
+	z-index: 1;
+	padding-left: 5px;
+	top: 30px;
+	right: 400px;
+	border: 1px solid LightGray;
+	border-top: none;
+	background-color: white;
+	display: none;
+}
+.service ul li{
+	float: left;
+	width: 84px;
+	color: gray;
+	text-align: left;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+.service ul li:hover{
+	color:red;
+}
+.daoHang{
+	width: 190px;
+	position: absolute;
+	z-index: 1;
+	padding-left: 5px;
+	top: 30px;
+	right: 286px;
+	border: 1px solid LightGray;
+	border-top: none;
+	background-color: white;
+	display: none;
+}
+.daoHang ul li{
+	float: left;
+	width: 84px;
+	color: gray;
+	text-align: left;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+.daoHang ul li:hover{
+	color:red;
+}
+.shousuo{
+	height: 87px;
+	line-height: 87px;	
+	border-bottom: 1px solid LightGray;
+}
+.shousuokuang{
+	float: right;
+	margin-top: 30px;
+	margin-right: 400px;
+}
+
+/* 跳转点 */
+.xiaduan{
+	margin-top: 50px;
+	padding-left: 200px;
+}
+.xiaduan>div{
+	float: left;
+	margin-right: 80px;
+}
+.xiaduan div img{
+	cursor: pointer;
+}
+.xiaduan div .a{
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+}
+.xiaduan div .b{
+	width: 160px;
+	font-size: 13px;
+	color: LightGray;
+	text-align: center;
+}
+/* 标语 */
+.biaoyu{
+	margin-top: 300px;
+	height: 100px;
+	background-color:#F0F0F0; 
+	line-height: 100px;
+	padding-left: 200px;
+}
+.biaoyu ul li{
+	float: left;
+	margin-right: 50px;
+}
+.biaoyu ul li .a{
+	font-weight: bolder;
+	font-size: 40px;
+	color: red;
+}
+.biaoyu ul li .b{
+	font-size: 24px;
+	font-weight: bold;
+	opacity: 0.8;
+}
+/* 末端 */
+.moduan{
+	height: 30px;
+	padding-left: 0px;
+	position: absolute;
+	margin-left: 450px;
+	margin-top: 10px;
+	border-top: 1px solid LightGray;
+}
+.moduan ul li{
+	float: left;
+	margin-right: 6px;
+	font-size: 14px;
+	color:#7B7B7B;
+}
+.moduan ul li:hover{
+	color: red;
+}
+
+/* 小彩蛋 */
+.xiaocaidan{
+	background-color: red;
+	border: 1px solid LightGray;
+	height: 40px;
+	width: 140px;
+	position: fixed;
+	right: -81px;
+	bottom: 40px;
+}
+.xiaocaidan .but{
+	height: 40px;
+	width: 60px;
+	background-color:red;
+	color: white;
+	border: none; 
+	font-size: 16px;
+	font-weight: bold;
+	float: left ;
+	border-right:1px solid white;
+}
+.xiaocaidan .yin{
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: white;
+	float: left;
+	text-align: center;
+	display: inline-block;
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="import.css">
+	<script src="come.js"></script>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script  type="text/javascript" src="js.js"></script>
+</head>
+<body>
+		
+		<div class="topSelect">
+			<ul>
+				<li>请登录</li>
+				<li>我的京东</li>
+				<li>京东会员</li>
+				<li id="findG">关注京东</li>
+				<li id="findS">客户服务</li>
+				<li id="findW">网站导航</li>
+			</ul>
+		</div>
+		<div class="guanZhu" id="downPicture">
+			<img src="京东轮播图图片/guanzhu.jpg" >
+		</div>
+		<div class="service" id="service">
+			<p style="text-align: left;font-weight: bold;font-size: 14px;color: gray;">客户</p>
+			<ul>
+				<li>帮助中心</li>
+				<li>售后服务</li>
+				<li>在线客户</li>
+				<li>意见建议</li>
+				<li>电话客服</li>
+				<li>客服邮箱</li>
+			</ul>
+		</div>
+		<div class="daoHang" id="daoHang">
+			<p style="text-align: left;font-weight: bold;font-size: 14px;color: gray;">特色主题</p>
+			<ul>
+				<li>新品首发</li>
+				<li>京东金融</li>
+				<li>全球售</li>
+				<li>京东会员</li>
+				<li>京东预售</li>
+				<li>买什么</li>
+				<li>俄语站</li>
+				<li>装机大师</li>
+				<li>0元评测</li>
+				<li>拍拍二手</li>
+				<li>陪伴计划</li>
+			</ul>
+		</div>
+
+		<!-- 搜索框 -->
+		<div class="shousuo">
+			<img src="京东轮播图图片/京东图标.jpg" style="height: 85px;width: 140px;margin-left: 300px;float: left;">
+			<div class="shousuokuang">
+				<input type="text" style="height: 30px;width:300px;display: inline-block;float: left;border: 2px solid red">
+				<input type="button" value="搜索" style="height: 34px;width: 60px;display: inline-block;float: left;background-color: red;color: white;border: none;">
+			</div>
+		</div>
+
+		<!-- 轮播图 -->
+		<div class="box" id="box">
+			<div class="slider" id="slider">
+				<div class="slide"><img src="京东轮播图图片/3.jpg"></div>
+				<div class="slide"><img src="京东轮播图图片/1.jpg"></div>
+				<div class="slide"><img src="京东轮播图图片/2.jpg"></div>
+				<div class="slide"><img src="京东轮播图图片/3.jpg"></div>
+				<div class="slide"><img src="京东轮播图图片/1.jpg"></div>
+			</div>
+			<ul class="nav" id="nav">
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<span id="left"><</span>
+			<span id="right">></span>	
+		</div>
+		<!-- 跳转到其他 -->
+		<div class="xiaduan">
+			<div id="kehuduan">
+				<img src="京东轮播图图片/kehud.png" >
+				<p class="a" >京东客户端</p>
+				<p class="b">用京东，简单你的生活</p>
+			</div>
+			<div id="jingrong">
+				<img src="京东轮播图图片/jingrong.png">
+				<p class="a">京东金融</p>
+				<p class="b">会赚钱，懂生活的人都在这里</p>
+			</div>
+			<div>
+				<img src="京东轮播图图片/钱包.png">
+				<p class="a">京东钱包</p>
+				<p class="b">京东钱包，让生活简单一点!</p>
+			</div>
+			<div id="dushu">
+				<img src="京东轮播图图片/读书.png" >
+				<p class="a">京东读书</p>
+				<p class="b">读好书，上京东</p>
+			</div>
+			<div id="yinyue">
+				<img src="京东轮播图图片/音乐.png" >
+				<p class="a">京东音乐</p>
+				<p class="b">听音乐来京东，畅享音乐好生活</p>
+			</div>	
+		</div>
+		<!-- 标语 -->
+		<div class="biaoyu">
+			<ul>
+				<li><span class="a">多</span> <span class="b">品类齐全 轻松购物</span></li>
+				<li><span class="a">快</span> <span class="b">多仓直发 极速配送</span></li>
+				<li><span class="a">好</span> <span class="b">正品行货 精致服务</span></li>
+				<li><span class="a">省</span> <span class="b">天天降价 畅选无忧</span></li>
+			</ul>
+		</div>
+		<!-- 结束 -->
+		<div class="moduan">
+			<ul>
+				<li>关于我们   |</li>
+				<li>联系我们   |</li>
+				<li>商家入住   |</li>
+				<li>营销中心   |</li>
+				<li>手机京东   |</li>
+				<li>友情链接   |</li>
+				<li>销售联盟   |</li>
+				<li>京东社区   |</li>
+				<li>京东公益</li>
+			</ul>
+		</div>
+		<!-- 小彩蛋 -->
+		<div class="xiaocaidan" id="xiaocaidan">
+			<button class="but" id="but">收藏</button>
+			<p class="yin">收藏送好礼</p>
+		</div>
+</body>
+<script type="text/javascript">
+	var findG = document.getElementById("findG");
+	var findS = document.getElementById("findS");
+	var findW = document.getElementById("findW");
+	var daoHang = document.getElementById("daoHang");
+	var downPicture = document.getElementById("downPicture");
+	var service = document.getElementById("service");
+	var but = document.getElementById("but");
+	var xiaocaidan = document.getElementById("xiaocaidan");
+	var kehuduan = document.getElementById("kehuduan").children;
+	var jingrong = document.getElementById("jingrong").children;
+	var dushu = document.getElementById("dushu").children;
+	var yinyue = document.getElementById("yinyue").children;
+	for(var i=0;i<2;i++)
+	{
+		kehuduan[i].onclick = function(){
+			window.location.href = "../kuhuduan/HTMLPage1.html"
+		}
+		jingrong[i].onclick = function(){
+			window.location.href = "../京东金融/jingdongjinrong.html";
+		}
+		yinyue[i].onclick = function(){
+			window.location.href = "../music/index.html";
+		}
+	}
+	caidan(xiaocaidan,xiaocaidan);
+	onCome(findG,downPicture);
+	onCome(findS,service);
+	onCome(findW,daoHang);
+	var box = document.getElementById("box");
+	var slider = document.getElementById("slider");
+	var left = document.getElementById("left");
+	var right = document.getElementById("right");
+	var navList = document.getElementById("nav").children;
+	var isMoving = false;
+	var flag=1;
+	function next(){
+		if(isMoving){
+			return;
+		}
+		isMoving = true;
+		flag++;
+		navChange();
+		animate(slider,{left:-990 * flag},function(){
+			if(flag==4)
+			{
+				slider.style.left = "-990px";
+				flag=1;
+			}
+			isMoving = false;
+		});
+	}
+
+	function last(){	
+		if(isMoving){
+			return;
+		}
+		isMoving = true;
+		flag--;
+		navChange();
+		animate(slider,{left:-990 * flag},function(){
+			if(flag==0)
+			{
+				slider.style.left = "-2970px";
+				flag=4;
+			}
+			isMoving = false;
+		});
+	}
+		
+	var timer = setInterval(next,3000);
+	box.onmouseover = function(){
+		left.style.opacity=1;
+		right.style.opacity=1;
+		clearInterval(timer);
+	}
+	box.onmouseout = function(){
+		left.style.opacity=0;
+		right.style.opacity=0;
+		timer = setInterval(next, 3000);
+	}
+	right.onclick = next;
+	left.onclick = last;
+	for(var i=0;i<navList.length;i++)
+	{
+		navList[i].val = i;
+		navList[i].onclick = function(){
+			flag = this.val + 1;
+			navChange();
+			animate(slider,{left:-990 * flag});
+		}
+	}
+
+	function navChange(){
+		for(var i=0;i<navList.length;i++)
+		{
+			navList[i].className = "";
+		}
+		if(flag === 4)
+		{
+			navList[0].className = "active";
+		}
+		else if(flag==0)
+		{
+			navList[2].className = "active";
+		}
+		else 
+		{
+			navList[flag-1].className = "active";
+		}
+	}
+
+</script>
+</html>
