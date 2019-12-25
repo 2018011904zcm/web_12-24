@@ -150,10 +150,10 @@
 	for(var i=0;i<2;i++)
 	{
 		kehuduan[i].onclick = function(){
-			window.location.href = "../images/HTMLPage1.html"
+			window.location.href = "../kuhuduan/HTMLPage1.html"
 		}
 		jingrong[i].onclick = function(){
-			window.location.href = "../jinrong/jingdongjinrong.html";
+			window.location.href = "../京东金融/jingdongjinrong.html";
 		}
 		yinyue[i].onclick = function(){
 			window.location.href = "../music/index.html";
@@ -177,10 +177,10 @@
 		isMoving = true;
 		flag++;
 		navChange();
-		animate(slider,{left:-990 * flag},function(){
+		animate(slider,{left:-1200 * flag},function(){
 			if(flag==4)
 			{
-				slider.style.left = "-990px";
+				slider.style.left = "-1200px";
 				flag=1;
 			}
 			isMoving = false;
@@ -194,10 +194,10 @@
 		isMoving = true;
 		flag--;
 		navChange();
-		animate(slider,{left:-990 * flag},function(){
+		animate(slider,{left:-1200 * flag},function(){
 			if(flag==0)
 			{
-				slider.style.left = "-2970px";
+				slider.style.left = "-6000px";
 				flag=4;
 			}
 			isMoving = false;
@@ -223,7 +223,7 @@
 		navList[i].onclick = function(){
 			flag = this.val + 1;
 			navChange();
-			animate(slider,{left:-990 * flag});
+			animate(slider,{left:-1200 * flag});
 		}
 	}
 
