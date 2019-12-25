@@ -2,7 +2,7 @@
 * @Author: 11
 * @Date:   2019-12-20 17:16:38
 * @Last Modified by:   11
-* @Last Modified time: 2019-12-25 16:48:59
+* @Last Modified time: 2019-12-25 18:43:48
 */
 *{
 	padding: 0;
@@ -95,12 +95,12 @@ ul,li{
 .shousuokuang{
 	float: right;
 	margin-top: 30px;
-	margin-right: 400px;
+	margin-right: 350px;
 }
 
 /* 跳转点 */
 .xiaduan{
-	margin-top: 50px;
+	margin: 60px auto;
 	padding-left: 200px;
 }
 .xiaduan>div{
@@ -127,7 +127,7 @@ ul,li{
 	height: 100px;
 	background-color:#F0F0F0; 
 	line-height: 100px;
-	padding-left: 200px;
+	padding-left: 190px;
 }
 .biaoyu ul li{
 	float: left;
