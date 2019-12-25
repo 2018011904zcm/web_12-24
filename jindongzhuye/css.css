@@ -2,7 +2,7 @@
 * @Author: 11
 * @Date:   2019-12-09 16:53:09
 * @Last Modified by:   11
-* @Last Modified time: 2019-12-25 08:49:15
+* @Last Modified time: 2019-12-25 18:41:53
 */
 *{
 	margin:0;
@@ -12,22 +12,25 @@ ul,li{
 	list-style: none;
 }
 .box{
-	width: 990px;
+	width: 1200px;
 	height: 490px;
-	margin: 40px auto;
+	margin: 30px auto;
 	position: relative;
 	border-radius: 20px;
 	overflow: hidden;
 }
 .slider{
-	width: 4950px;
+	width: 8400px;
 	position: absolute;
-	left: -990px;	
+	left: -1200px;	
 }
 .slide{
-	width: 990px;
+	width: 1200px;
 	overflow: hidden;
 	float: left;
+}
+.slide img{
+	width: 1200px;
 }
 .box>span{
 	display: block;
@@ -51,7 +54,7 @@ ul,li{
 }
 .nav{
 	position: absolute;
-	left: 480px;
+	left: 580px;
 	bottom:22px;
 }
 .nav>li{
