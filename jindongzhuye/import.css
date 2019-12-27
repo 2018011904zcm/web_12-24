@@ -2,7 +2,7 @@
 * @Author: 11
 * @Date:   2019-12-20 17:16:38
 * @Last Modified by:   11
-* @Last Modified time: 2019-12-25 18:43:48
+* @Last Modified time: 2019-12-27 13:07:58
 */
 *{
 	padding: 0;
@@ -105,7 +105,8 @@ ul,li{
 }
 .xiaduan>div{
 	float: left;
-	margin-right: 80px;
+	position: absolute;
+	text-align: center;
 }
 .xiaduan div img{
 	cursor: pointer;
@@ -123,7 +124,7 @@ ul,li{
 }
 /* 标语 */
 .biaoyu{
-	margin-top: 300px;
+	margin-top: 330px;
 	height: 100px;
 	background-color:#F0F0F0; 
 	line-height: 100px;
