@@ -84,22 +84,22 @@
 				<p class="a" >京东客户端</p>
 				<p class="b">用京东，简单你的生活</p>
 			</div>
-			<div id="jingrong">
+			<div id="jingrong" style="left: 460px;">
 				<img src="京东轮播图图片/jingrong.png">
 				<p class="a">京东金融</p>
 				<p class="b">会赚钱，懂生活的人都在这里</p>
 			</div>
-			<div>
+			<div id="qianbao" style="left: 720px">
 				<img src="京东轮播图图片/钱包.png">
 				<p class="a">京东钱包</p>
 				<p class="b">京东钱包，让生活简单一点!</p>
 			</div>
-			<div id="dushu">
+			<div id="dushu" style="left: 980px">
 				<img src="京东轮播图图片/读书.png" >
 				<p class="a">京东读书</p>
 				<p class="b">读好书，上京东</p>
 			</div>
-			<div id="yinyue">
+			<div id="yinyue" style="left: 1240px">
 				<img src="京东轮播图图片/音乐.png" >
 				<p class="a">京东音乐</p>
 				<p class="b">听音乐来京东，畅享音乐好生活</p>
@@ -147,13 +147,14 @@
 	var jingrong = document.getElementById("jingrong").children;
 	var dushu = document.getElementById("dushu").children;
 	var yinyue = document.getElementById("yinyue").children;
+	var qianbao = document.getElementById("qianbao").children;
 	for(var i=0;i<2;i++)
 	{
 		kehuduan[i].onclick = function(){
-			window.location.href = "../kehuduan/jingdongkehuduan.html"
+			window.location.href = "../kuhuduan/HTMLPage1.html"
 		}
 		jingrong[i].onclick = function(){
-			window.location.href = "../jinrong/jingdongjinrong.html";
+			window.location.href = "../京东金融/jingdongjinrong.html";
 		}
 		yinyue[i].onclick = function(){
 			window.location.href = "../music/index.html";
@@ -162,6 +163,11 @@
 			window.location.href = "../dushu/dushu.html";
 		}
 	}
+	fangda(kehuduan);
+	fangda(jingrong);
+	fangda(dushu);
+	fangda(yinyue);
+	fangda(qianbao);
 	caidan(xiaocaidan,xiaocaidan);
 	onCome(findG,downPicture);
 	onCome(findS,service);
