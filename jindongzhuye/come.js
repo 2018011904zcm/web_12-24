@@ -9,24 +9,22 @@ function onCome(a,b){
 	a.onmouseover = function(){
 		a.setAttribute("style", "background-color:white;");
 		b.setAttribute("style","display:block;" );
-		flag =setTimeout(function()
-			{
-				a.setAttribute("style", "background-color:WhiteSmoke;");
-				b.setAttribute("style","display:none;" );
-			}, 400);
 	}
-	b.onmouseover = function(){
-		clearTimeout(flag);
-		a.setAttribute("style", "background-color:white;");
-		b.setAttribute("style","display:block;" );
+	a.onmouseout = function(){
+		b.onmouseover = function(){
+			a.setAttribute("style", "background-color:white;");
+			b.setAttribute("style","display:block;" );
+		}
+		a.setAttribute("style", "background-color:WhiteSmoke;");
+		b.setAttribute("style","display:none;" );
 	}
+	
 	b.onmouseout = function(){
 		a.setAttribute("style", "background-color:WhiteSmoke;");
 		b.setAttribute("style","display:none;" );
 	}
 	
 }
-
 function caidan(a,b){
 	a.onmouseover = function(){
 		var help = "right:" +0 + "px";
